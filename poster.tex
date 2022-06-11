@@ -13,7 +13,7 @@
 \colorlet{backgroundcolor}{white}
 
 % title information
-\title{A Flexible Approach for Predictive Biomarker Discovery}
+\title{Your Very Interesting Poster Title}
 \author{First Author$^1$, Second author$^2$, Third Author$^1$}
 \institute{$^1$University of California, Berkeley; $^2$ Other Institution}
 
@@ -26,8 +26,8 @@
 \setlength{\bibsep}{0pt plus 0.3ex}
 \begin{document}
 
-% title and graphics
-\maketitle[width=23in]
+% title and graphics. increase the width to wrap around your poster title
+\maketitle[width=17in]
 \node[anchor=west] at (TP@title.west) {\includegraphics[width=8cm]{logos/cal}};
 \node[anchor=east] at (TP@title.east) {\includegraphics[width=7cm]{logos/arxiv-link-qr-code}};
 
@@ -42,12 +42,15 @@
       \item Only include salient details.
       \item Feel free to cite a few important references
         \citep{example-citation}.
+      \item These boxes are resized automatically.
+      \item Use \texttt{\textbackslash vspace\{\}} to alter the amount of
+    white space above and below the text.
     \end{itemize}
   }
 
   \myblock{Statistical Problem Formulation}{
     Outline the statistical problem formulation of your topic using as little
-    notation as possible.
+    notation as possible. 
   }
 
   \column{0.334}
@@ -70,7 +73,9 @@
     If you performed any numerical experiments, present them here. Here's an
     example. Try to avoid too much text, if any. If anyone has questions, you
     can answer them directly.
-    \vspace{1em}
+
+    \vspace{0.25em}
+
     \begin{center}
       \begin{tikzfigure}
         \includegraphics[width=0.295\textwidth]{figures/heatmaps.png}
@@ -79,9 +84,9 @@
   }
   
   \mysmallblock{Funding}{
-    \vspace{-2em}
-    Don't forget to thank your funding agencies! You might also use this box
-    for acknowledgements.
+    \vspace{-1.5em}
+    Don't forget to thank your funding sources! You can also use this box
+    for acknowledgements by modifying the box title.
     \vspace{-2em}
   }
   
@@ -91,7 +96,7 @@
     Include the results of your real-data application here, if any. Again, try
     not to include too much text. Let the figure(s) speak for themselves.
 
-    \vspace{1em}
+    \vspace{0.25em}
 
     \begin{center}
       \begin{tikzfigure}
@@ -101,14 +106,17 @@
   }
 
   \myblock{Conclusion}{
-    A one-sentence takeaway of your findings.
+    A one-sentence takeaway of your findings. Don't forget to include links or
+    QR codes to your paper, preprint and/or software, if publicly available. QR
+    codes should be placed in the \texttt{logos} folder. Don't forget to update
+    the path to the QR code on line 32 of this TeX file.
   }
   
   \mysmallblock{Reference}{
     \vspace{-2em}
     \bibliographystyle{unsrtnat}
     \bibliography{refs}
-    \vspace{-2em}
+    \vspace{-1em}
   }
 
 \end{columns}
