@@ -19,7 +19,7 @@ distributed through [TeX Live](https://www.tug.org/texlive/).
    `logos/` directory.
 5. Update the bibliography file: `refs.bib`. This template uses the `natbib`
    package.
-5. Build the poster using the provided `Makefile` by typing `make all` in the
+5. Build the poster using the provided `Makefile` by running `make all` in the
    command line.
 
 ## Examples
