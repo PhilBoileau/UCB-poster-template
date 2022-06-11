@@ -1,7 +1,7 @@
 # A UC Berkeley-Themed Poster Template
 
 This repository provides a UC Berkeley-themed LaTeX poster template. While the
-current setup caters to statisticians and related disciplines, modifications
+current setup caters to statisticians, modifications
 targeting other audiences are straightforward. This template relies on the
 `tikzposter` package. For information on `tikzposter`, check out its
 [CTAN](https://ctan.org/pkg/tikzposter?lang=en) listing.
